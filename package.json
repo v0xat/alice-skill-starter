@@ -1,0 +1,25 @@
+{
+  "name": "alice-skill-starter",
+  "version": "1.0.0",
+  "description": "Alice skill starter for Node.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js -w src",
+    "test": "mocha tests/setup.js tests/specs",
+    "test:d": "set DEBUG=alice-tester LOGGEE_LEVEL=debug & npm t"
+  },
+  "dependencies": {
+    "alice-renderer": "^1.1.0",
+    "loggee": "^0.2.0",
+    "micro": "^9.3.4"
+  },
+  "devDependencies": {
+    "alice-tester": "^2.1.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.25.0",
+    "eslint-plugin-mocha": "^8.1.0",
+    "get-port": "^5.1.1",
+    "mocha": "^8.3.2"
+  },
+  "license": "MIT"
+}

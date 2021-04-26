@@ -1,0 +1,7 @@
+{
+  "name": "Шаблон навыка Алисы на Node.js",
+  "description": "Вебхук навыка для Яндекс Алисы, разработанный на Node.js",
+  "repository": "https://github.com/v0xat/alice-skill-starter",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "alice"]
+}

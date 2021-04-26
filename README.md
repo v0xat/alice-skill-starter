@@ -1,5 +1,6 @@
 # Шаблон проекта навыка для Алисы на Node.js
 [![Node CI](https://github.com/v0xat/alice-skill-starter/workflows/Node%20CI/badge.svg)](https://github.com/v0xat/alice-skill-starter/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9d5f281428ab608e5486/maintainability)](https://codeclimate.com/github/v0xat/alice-skill-starter/maintainability)
 
 Готовый к использованию шаблон проекта [навыка для Алисы](https://yandex.ru/dev/dialogs/alice/doc/about-docpage/) на Node.js.  
 Это немного измененная версия репозитория [vitalets](https://github.com/vitalets/alice-skill-starter).
@@ -10,7 +11,6 @@
 ### Деплой на heroku
 1. Нажмите на кнопку ниже  
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/v0xat/alice-skill-starter)
-
 2. После развертывания нажмите на кнопку View и скопируйте URL.
 3. Создайте новый навык для Алисы в [Яндекс Диалогах](https://dialogs.yandex.ru/).
 4. Укажите название навыка и URL вебхука, который вы скопировали.
@@ -42,7 +42,6 @@ Heroku автоматически соберет и обновит ваш сер
 HTTP server started on port: 3000
 ```
 3. В соседнем окне терминала запустите ngrok: `ngrok http 3000`  
-
 4. Скопируйте URL сформированный ngrok `https://XXXXXXXX.ngrok.io` в поле Webhook URL в панели разработчика.
 
 ## Тестирование

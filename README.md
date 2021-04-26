@@ -1,4 +1,4 @@
-# Шаблон проекта навыка для Алисы на Node.js
+# Шаблонный проект навыка для Алисы на Node.js
 [![Node CI](https://github.com/v0xat/alice-skill-starter/workflows/Node%20CI/badge.svg)](https://github.com/v0xat/alice-skill-starter/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9d5f281428ab608e5486/maintainability)](https://codeclimate.com/github/v0xat/alice-skill-starter/maintainability)
 

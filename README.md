@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9d5f281428ab608e5486/maintainability)](https://codeclimate.com/github/v0xat/alice-skill-starter/maintainability)
 
 Готовый к использованию шаблон проекта [навыка для Алисы](https://yandex.ru/dev/dialogs/alice/doc/about-docpage/) на Node.js.  
-Это немного измененная версия репозитория [vitalets](https://github.com/vitalets/alice-skill-starter).
+Это немного измененная под себя версия репозитория [vitalets](https://github.com/vitalets/alice-skill-starter).
 
 ## Использование
 Проект можно развернуть в облаке на Heroku, а затем продолжить разработку и отладку на своем ПК.
@@ -35,14 +35,17 @@ git push
 ```
 Heroku автоматически соберет и обновит ваш сервер.
 ### Запуск локально через ngrok
-1. Установите [ngrok](https://github.com/bubenshchykov/ngrok) глобально: `npm install ngrok -g`
-2. Запустите навык: `make start-d`  
+1. Установите [ngrok](https://github.com/bubenshchykov/ngrok) и [nodemon](https://github.com/remy/nodemon) глобально: `npm install nodemon ngrok -g`
+2. Установите зависимости: `make install`
+3. Запустите навык: `make start-d`  
 Сервер навыка запустится на 3000 порту:
 ```
 HTTP server started on port: 3000
 ```
-3. В соседнем окне терминала запустите ngrok: `ngrok http 3000`  
-4. Скопируйте URL сформированный ngrok `https://XXXXXXXX.ngrok.io` в поле Webhook URL в панели разработчика.
+4. В соседнем окне терминала запустите ngrok: `ngrok http 3000`  
+5. Скопируйте URL сформированный ngrok `https://XXXXXXXX.ngrok.io` в поле Webhook URL в панели разработчика.
+
+Чтобы увеличить время сессии ngrok (по умолчанию 8 часов), нужно получить [authtoken](https://ngrok.com/docs#authtoken)  и выполнить в консоли: `ngrok authtoken <YOUR_AUTHTOKEN>`
 
 ## Тестирование
 ### Запуск юнит тестов

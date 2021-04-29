@@ -23,5 +23,4 @@ Logger.setLogLevel(process.env.LOGGEE_LEVEL || 'none');
   after(async () => {
     await server.close();
   });
-
 })();

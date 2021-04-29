@@ -45,7 +45,7 @@ HTTP server started on port: 3000
 4. В соседнем окне терминала запустите ngrok: `ngrok http 3000`  
 5. Скопируйте URL сформированный ngrok `https://XXXXXXXX.ngrok.io` в поле Webhook URL в панели разработчика.
 
-Чтобы увеличить время сессии ngrok (по умолчанию 8 часов), нужно получить [authtoken](https://ngrok.com/docs#authtoken)  и выполнить в консоли: `ngrok authtoken <YOUR_AUTHTOKEN>`
+Чтобы увеличить время сессии ngrok (по умолчанию 8 часов), нужно получить [authtoken](https://ngrok.com/docs#authtoken) и выполнить в консоли: `ngrok authtoken <YOUR_AUTHTOKEN>`
 
 ## Тестирование
 ### Запуск юнит тестов

@@ -1,6 +1,6 @@
-const {reply, audio} = require('alice-renderer');
+const { reply, audio } = require('alice-renderer');
 
-exports.handle = function (command) {
+exports.handle = async (command) => {
   return command
     ? repeatUserText(command)
     : welcome();

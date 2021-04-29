@@ -1,13 +1,17 @@
-const {promisify} = require('util');
+const { promisify } = require('util');
 const micro = require('micro');
 const Logger = require('loggee');
 const replies = require('./replies');
 
-const server = micro(async req => {
-  const {request, session, version} = await micro.json(req);
-  const response = replies.handle(request.command);
+const server = micro(async (req) => {
+  const { request, session, version } = await micro.json(req);
+  const response = await replies.handle(request.command);
   log(session, request.command, response.text);
-  return {version, session, response};
+  const session_state = {
+    last_text: response.text,
+    last_tts: response.tts
+  };
+  return { version, session, response, session_state };
 });
 
 const log = (session, userText, botText) => {
